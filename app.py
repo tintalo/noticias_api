@@ -31,8 +31,7 @@ def home():
     return render_template(
         "index.html",
         noticias=noticias,
-        categorias=CATEGORIAS,
-        seleccion=categoria,
+        seleccion=categoria,  # << CORREGIDO: antes decía categoria_actual
         page=page,
         total_pages=total_pages
     )
